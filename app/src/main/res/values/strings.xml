@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ShopDemo2</string>
+    <string name="namedemo">Cơm canh giò</string>
+    <string name="quantitydemo">7</string>
+    <string name="inpricedemo">6.7</string>
+    <string name="outpricedemo">7</string>
+    <string name="createddemo">1/7/2021</string>
+    <string name="quantity">Quantity</string>
+    <string name="inprice">In price</string>
+    <string name="outprice">Out price</string>
+    <string name="created">Created</string>
+    <string name="name">Name</string>
+    <string name="nameerror">Name is empty</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/fragmentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        class="com.example.shopdemo2.fragments.item.create.NameFragment"/>
+    <fragment
+        android:id="@+id/fragmentCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragmentName"
+        app:layout_constraintStart_toStartOf="parent"
+        class="com.example.shopdemo2.fragments.item.create.CreateFragment"/>
+    <fragment
+        android:id="@+id/fragmentInPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragmentCreate"
+        app:layout_constraintStart_toStartOf="parent"
+        class="com.example.shopdemo2.fragments.item.create.InPriceFragment"/>
+    <fragment
+        android:id="@+id/fragmentOutPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragmentCreate"
+        app:layout_constraintStart_toStartOf="parent"
+        class="com.example.shopdemo2.fragments.item.create.InPriceFragment"/>
+
+    <Button
+        android:id="@+id/buttonCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/created"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragmentInPrice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
